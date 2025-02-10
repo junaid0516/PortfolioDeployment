@@ -27,19 +27,19 @@ function UpperSection() {
         </div>
       </div>
 
-      <div className="fixed inset-0 flex justify-center items-start z-10 pt-0 w-full">
+      <div className="fixed inset-0 flex justify-center items-start z-50 pt-0 w-full">
         <div className=" flex justify-center items-start pt-10 w-full">
-          <div className="bg-slate-400 w-[40rem] sm:w-[40rem] lg:w-[60rem] h-12 ml-0 xl:w-[70rem] rounded-lg shadow-lg flex items-center px-6">
+          <div className="bg-slate-400 w-[40rem] sm:w-[40rem] lg:w-[60rem]  h-12 ml-2 sm:ml-0 xl:w-[60rem] rounded-3xl shadow-lg flex items-center px-2">
             <h1 className="text-white font-bold text-md  lg:text-lg">
               CompanyName
             </h1>
-            <ul className="hidden sm:flex gap-4 ml-auto text-white">
+            <ul className="hidden sm:flex gap-14 ml-auto text-white">
               <li className="hover:text-gray-400 cursor-pointer">Home</li>
               <li className="hover:text-gray-400 cursor-pointer">About Us</li>
               <li className="hover:text-gray-400 cursor-pointer">Services</li>
             </ul>
 
-            <button className="hidden sm:block ml-4 cursor-pointer bg-blue-600 text-white px-4 py-1 rounded-md hover:bg-blue-700 transition">
+            <button className="hidden sm:block ml-4 cursor-pointer bg-blue-600 text-white px-4 py-1 rounded-3xl hover:bg-blue-700 transition">
               Contact Us
             </button>
             <button
@@ -57,7 +57,7 @@ function UpperSection() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-28 right-0 w-[50%] bg-slate-400 text-white flex flex-col items-center space-y-4 py-4 sm:hidden">
+          <div className="absolute top-[5.5rem] z-50 rounded-xl right-0 w-[50%] bg-slate-400 text-white flex flex-col items-center space-y-4 py-4 sm:hidden">
             <ul className="flex flex-col gap-4 text-lg">
               <li className="hover:text-gray-400 cursor-pointer">Home</li>
               <li className="hover:text-gray-400 cursor-pointer">About Us</li>

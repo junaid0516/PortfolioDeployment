@@ -39,7 +39,7 @@ function InnovativeSolutions() {
               <p className="text-sm  ml-2">1.5k attendees</p>
             </div>
           </div>
-          <div className="w-[100%] flex items-center justify-center sm:w-[50%] z-50">
+          <div className="w-[100%] flex items-center justify-center sm:w-[50%] z-30">
             <div className="w-[90%] sm:w-[80%] lg:w-[70%] xl:w-[60%] bg-black p-7 mt-4 sm:mt-0 rounded-2xl">
             <div className="flex flex-col mt-1">
                 <label>Email</label>
@@ -80,7 +80,7 @@ function InnovativeSolutions() {
             </div>
           </div>
         </div>
-          <div className="bg-slate-500 h-40 w-96 pb-2 text-3xl font-semibold flex justify-center items-center rounded-t-3xl">
+          <div className="bg-slate-500 h-40 sm:w-96 pb-2 px-4 sm:text-3xl font-semibold flex justify-center items-center rounded-t-3xl">
             <p>Connect with Hello World</p>
         </div>
 
