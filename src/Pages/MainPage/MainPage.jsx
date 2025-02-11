@@ -1,23 +1,19 @@
-import AboutUs from "../AboutUs/AboutUs";
-import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
-import PotentialPage from "../PotentialPage/PotentialPage";
-import Real_Impact from "../Real_Impact/Real_Impact";
-import ThreeCards from "../ThreeCards/ThreeCards";
-import UpperSection from "../UpperSection/UpperSection";
 
+import PotentialPage from "../PotentialPage/PotentialPage";
+import UpperSection from "../UpperSection/UpperSection";
+// import Real_Impact from "../Real_Impact/Real_Impact";
+// import ThreeCards from "../ThreeCards/ThreeCards";
+// import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
 function MainPage() {
   return (
-    <div className=" w-full h-screen bg-[#272727]">
-    <div className="sm:h-screen " >
+    <div className=" w-full h-screen ">
+    <div className="" >
     <UpperSection/>
     </div>
-    <div className="sm:h-screen bg-slate-700" >
-    <AboutUs/>
-    </div>
-    <div className="sm:h-screen bg-[#272727] " >
+    <div className=" bg-[#292828] " >
       <PotentialPage/>
     </div>
-    <div className="sm:h-screen bg-[#272727]" >
+    {/* <div className="sm:h-screen bg-[#272727]" >
       <Real_Impact/>
     </div>
     <div className="sm:h-screen bg-[#272727] " >
@@ -25,7 +21,7 @@ function MainPage() {
     </div>
     <div className="sm:h-screen bg-[#272727] " >
       <InnovativeSolutions/>
-    </div>
+    </div> */}
     </div>
   );
 }

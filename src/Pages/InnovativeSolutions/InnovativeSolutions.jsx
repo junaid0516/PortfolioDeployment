@@ -39,7 +39,7 @@ function InnovativeSolutions() {
               <p className="text-sm  ml-2">1.5k attendees</p>
             </div>
           </div>
-          <div className="w-[100%] flex items-center justify-center sm:w-[50%] z-30">
+          <div className="w-[100%] flex items-center justify-center sm:w-[50%]">
             <div className="w-[90%] sm:w-[80%] lg:w-[70%] xl:w-[60%] bg-black p-7 mt-4 sm:mt-0 rounded-2xl">
             <div className="flex flex-col mt-1">
                 <label>Email</label>

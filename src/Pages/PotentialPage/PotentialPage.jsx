@@ -1,38 +1,32 @@
 import CardForPotentialPage from "../../assets/Components/CardForPotentialPage/CardForPotentialPage";
-import NotificationIcon from "../../assets/Images/NotificationIcon.svg";
+import webicon from "../../assets/Images/huhu.png";
 function PotentialPage() {
   return (
-    <div className=" flex justify-center items-center h-screen overflow-x-hidden">
+    <div className=" flex justify-center items-center h-screen ">
     <div className=" text-white px-4 sm:px-9 lg:px-14 xl:px-16 pt-10 ">
       <div className=" flex sm:justify-center ">
-        <h1 className=" font-bold text-3xl sm:text-5xl">Unleash Your Potential</h1>
+        <h1 className=" font-bold text-3xl sm:text-5xl">What we Offer</h1>
       </div>
-      <div className=" flex flex-col sm:flex-row lg:pb-4 justify-around xl:justify-center w-full gap-2 mt-10 sm:gap-4 xl:gap-12 sm:px-7">
+      <div className=" flex flex-col sm:flex-row gap-3 mt-10 sm:gap-6 justify-center items-center">
       <div>
-        <CardForPotentialPage Heading={"Web Development"} putImage={NotificationIcon} Details={"Building modern, responsive, and dynamic web applications. Skilled in API integration."}/>
-      </div>
-      <div className="">
-        <CardForPotentialPage Heading={"Mobile"} Details={"Building modern, responsive, and dynamic mobile applications. Skilled in API integration, performance optimization, and state management."}/>
-      </div>
-      <div className="sm:hidden xl:block">
-        <CardForPotentialPage Heading={"DevOps"} Details={"Building modern, scalable, and automated infrastructure. Skilled in CI/CD, performance optimization, and system monitoring"}/>
-      </div>
-      </div>
-      <div className="hidden xl:hidden sm:flex flex-col sm:flex-row justify-around xl:justify-center w-full gap-2 mt-2 sm:gap-4 xl:gap-14 sm:px-7">
-      <div className="">
-        <CardForPotentialPage Heading={"DevOps"} Details={"Building modern, scalable, and automated infrastructure. Skilled in CI/CD, performance optimization, and system monitoring. Passionate about streamlining development workflows and ensuring seamless deployments. Experienced in security best practices and cloud management."}/>
-      </div>
-      <div className="">
-        <CardForPotentialPage Heading={"Social Media Marketing"} Details={"Creating engaging, data-driven marketing strategies to grow online presence. Skilled in content creation, audience targeting, and performance analysis. Passionate about building brand identity and increasing engagement. Experienced in trend analysis and campaign optimization."}/>
-      </div>
-
-      </div>
-      <div className="  flex flex-col sm:flex-row justify-around xl:justify-center w-full gap-2 mt-2 sm:gap-4 xl:gap-14 sm:px-7">
-      <div className="sm:hidden xl:block">
-        <CardForPotentialPage Heading={"Social Media Marketing"} Details={"Creating engaging, data-driven marketing strategies to grow online presence ."}/>
+        <CardForPotentialPage Heading={"WebSite Development "} putImage={webicon} Details={"Crafting Personalized Brand Experiences Across Different Devices with Mobile plus Web Development. Seamlessly Connect with Your Audience wherever they are."}/>
       </div>
       <div>
-        <CardForPotentialPage Heading={"Innovations"} Details={"Driving creative solutions and cutting-edge ideas to enhance efficiency and impact."}/>
+        <CardForPotentialPage Heading={"Search Engine Optimization"} putImage={webicon} Details={"Maximize Your Online Presence with Effective SEO. Increase Visibility and Attract Targeted Leads. Achieve your Online Goals Faster and More Efficiently."}/>
+      </div>
+      <div>
+        <CardForPotentialPage Heading={"Search Engine Marketing"} putImage={webicon} Details={"We Help to Improve your Business’s Success Online. If you Want to Increase Visibility, Traffic, Sales, or All The Above, Our SEM Management Services can Help You."}/>
+      </div>
+      </div>
+      <div className=" flex flex-col sm:flex-row gap-3 mt-3 sm:mt-10 sm:gap-6 justify-center items-center">
+      <div>
+        <CardForPotentialPage Heading={"Graphic Designing"} putImage={webicon} Details={"Influence Customer Behavior Through Effective Brand Recognition and Connection. Create a Memorable Brand Experience That Sets You Apart."}/>
+      </div>
+      <div>
+        <CardForPotentialPage Heading={"Social media marketing"} putImage={webicon} Details={"Improve your Credibility and Brand Presence on Social Media by Targeting Custom-Made Marketing Strategies. Connect with Your Audience."}/>
+      </div>
+      <div>
+        <CardForPotentialPage Heading={"Influencer and PR services"} putImage={webicon} Details={"We Harness the Power of Creators to Drive True Human Influence. Connect with Your Audience Through Authentic Storytelling."}/>
       </div>
       </div>
     </div>
