@@ -73,9 +73,8 @@ function UpperSection() {
           </motion.h1>
 
           {/* Typing Animation (No Dimming) */}
-          <div className="flex text-6xl my-4">
-            <span className="font-bold mr-3">.</span>
-            <span className="text-6xl text-blue-400 font-bold">{currentText}</span>
+          <div className="flex text-6xl my-4">            
+            <span className="text-6xl text-blue-400 font-bold">&nbsp;{currentText}</span>
           </div>
 
           {/* Paragraph */}
