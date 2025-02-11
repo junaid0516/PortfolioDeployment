@@ -85,8 +85,7 @@ function UpperSection() {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <p className="text-sm sm:text-sm">
-              Discover tailored software for mobile, web, and marketing with
-              Hello World Software Agency. Seamlessly connect with your audience.
+            Empowering your digital journey with cutting-edge solutions tailored to your needs.  From stunning designs <br></br>to seamless software, we turn your vision into reality. Let’s build the future together!
             </p>
           </motion.div>
         </div>
@@ -102,12 +101,12 @@ function UpperSection() {
         <div className="bg-[#272727] w-full max-w-6xl h-12 rounded-3xl shadow-lg flex items-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-white font-bold text-md lg:text-xl">NyxLogics</h1>
           <ul className="hidden sm:flex gap-10 ml-auto text-white">
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
-            <li className="hover:text-gray-400 cursor-pointer">About Us</li>
-            <li className="hover:text-gray-400 cursor-pointer">Services</li>
+            <li className="hover:text-green-400 cursor-pointer">Home</li>
+            <li className="hover:text-green-400 cursor-pointer">About Us</li>
+            <li className="hover:text-green-400 cursor-pointer">Services</li>
           </ul>
 
-          <button className="hidden sm:block ml-8 bg-blue-600 text-white px-4 py-1 rounded-3xl hover:bg-blue-700 transition">
+          <button className="hidden sm:block ml-8 bg-green-500 text-white px-4 py-1 rounded-3xl hover:bg-blue-700 transition">
             Contact Us
           </button>
           <button
