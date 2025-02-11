@@ -6,7 +6,7 @@ import UpperSection from "../UpperSection/UpperSection";
 // import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
 function MainPage() {
   return (
-    <div className=" w-full h-screen ">
+   <>
     <div className="" >
     <UpperSection/>
     </div>
@@ -22,7 +22,7 @@ function MainPage() {
     <div className="sm:h-screen bg-[#272727] " >
       <InnovativeSolutions/>
     </div> */}
-    </div>
+</>
   );
 }
 
