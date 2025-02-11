@@ -13,7 +13,7 @@ function MainPage() {
     <div className=" bg-[#292828] " >
       <PotentialPage/>
     </div>
-    <div className="sm:h-screen bg-[#272727]" >
+    <div className="sm:h-screen bg-[#292828]" >
       <Real_Impact/>
     </div>
     {/* <div className="sm:h-screen bg-[#272727] " >
