@@ -74,7 +74,7 @@ function UpperSection() {
 
           {/* Typing Animation (No Dimming) */}
           <div className="flex text-6xl my-4">            
-            <span className="text-6xl text-blue-400 font-bold">&nbsp;{currentText}</span>
+            <span className="text-6xl text-green-400 font-bold">&nbsp;{currentText}</span>
           </div>
 
           {/* Paragraph */}
@@ -107,7 +107,7 @@ function UpperSection() {
             <li className="hover:text-gray-400 cursor-pointer">Services</li>
           </ul>
 
-          <button className="hidden sm:block ml-4 bg-blue-600 text-white px-4 py-1 rounded-3xl hover:bg-blue-700 transition">
+          <button className="hidden sm:block ml-8 bg-blue-600 text-white px-4 py-1 rounded-3xl hover:bg-blue-700 transition">
             Contact Us
           </button>
           <button
