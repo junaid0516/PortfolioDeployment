@@ -41,8 +41,8 @@ function PotentialPage() {
   }, []);
 
   return (
-    <div className=" flex flex-col items-center h-full py-24">
-      <div className=" bg-[#54696369] w-full px-4 grid grid-cols-3 gap-7 text-white py-8">
+    <div className=" flex flex-col items-center h-full pb-24">
+      <div className=" bg-[#54696369] mb-30 w-full px-4 grid grid-cols-3 gap-7 text-white py-8">
         <div className=" flex flex-col justify-center items-center border-r">
           <p className="font-bold text-2xl 2xl:text-5xl">
             {" "}
