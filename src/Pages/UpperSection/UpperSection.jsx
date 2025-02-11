@@ -1,9 +1,49 @@
-import { useState } from "react";
+import  { useState, useEffect } from "react";
 import burgermenu from "../../assets/Images/burgermenu.svg";
 import bgvideo from "../../assets/videos/bgVideo.mp4";
+import { motion, AnimatePresence } from "framer-motion";
+
+
 
 function UpperSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const textOptions = ["Custom Web Application", " Custom Mobile Application", "Graphic Designing" ,"DevOps" , "Social Media Marketing" , ];
+  const [currentText, setCurrentText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const typingSpeed = 100; // Speed of typing
+  const deleteSpeed = 100; // Speed of deleting
+  const delayBeforeDelete = 2000; // Wait time before deleting
+
+  useEffect(() => {
+    let typingTimeout;
+
+    if (!isDeleting) {
+      // Typing Effect
+      if (currentText.length < textOptions[index].length) {
+        typingTimeout = setTimeout(() => {
+          setCurrentText(textOptions[index].slice(0, currentText.length + 1));
+        }, typingSpeed);
+      } else {
+        // Wait for 2 seconds after typing complete, then start deleting
+        setTimeout(() => setIsDeleting(true), delayBeforeDelete);
+      }
+    } else {
+      // Deleting Effect
+      if (currentText.length > 0) {
+        typingTimeout = setTimeout(() => {
+          setCurrentText(currentText.slice(0, currentText.length - 1));
+        }, deleteSpeed);
+      } else {
+        setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % textOptions.length); // Move to next text
+      }
+    }
+
+    return () => clearTimeout(typingTimeout);
+  }, [currentText, isDeleting, index, textOptions]);
+
 
   return (
     <div className="w-full h-screen flex justify-center items-center relative">
@@ -18,10 +58,11 @@ function UpperSection() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
+      {/* <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
         <div className="flex w-full text-white">
           <div className="flex items-center flex-col">
             <h1 className="text-6xl font-bold">Empower Your Vision</h1>
+            <h2 className="text-6xl" >Custom Apps</h2>
             <div className="pt-8">
               <p className="text-sm sm:text-sm">
                 Discover tailored software for mobile, web, and marketing with
@@ -30,7 +71,55 @@ function UpperSection() {
             </div>
           </div>
         </div>
+      </div> */}
+
+
+      <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
+      <div className="flex w-full text-white">
+        <div className="flex items-center flex-col">
+          {/* Main Heading */}
+          <motion.h1
+            className="text-6xl font-bold"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Empower Your Vision
+          </motion.h1>
+
+          {/* Typing Animation */}
+          <div className="flex text-6xl my-4">
+            <span className="font-bold mr-3"> .</span>
+            <motion.span
+              className="text-6xl text-blue-400"
+              key={currentText}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              {currentText}
+            </motion.span>
+          </div>
+
+          {/* Paragraph */}
+          <motion.div
+            className="pt-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
+            <p className="text-sm sm:text-sm">
+              Discover tailored software for mobile, web, and marketing with
+              Hello World Software Agency. Seamlessly connect with your audience.
+            </p>
+          </motion.div>
+        </div>
       </div>
+    </div>
+
+
+
+
 
       {/* Navbar */}
       <div className="fixed top-5 left-0 w-full flex justify-center items-start z-20 font-[roboto]">
