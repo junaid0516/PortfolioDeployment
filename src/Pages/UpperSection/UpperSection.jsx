@@ -58,22 +58,7 @@ function UpperSection() {
         Your browser does not support the video tag.
       </video>
 
-      {/* <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
-        <div className="flex w-full text-white">
-          <div className="flex items-center flex-col">
-            <h1 className="text-6xl font-bold">Empower Your Vision</h1>
-            <h2 className="text-6xl" >Custom Apps</h2>
-            <div className="pt-8">
-              <p className="text-sm sm:text-sm">
-                Discover tailored software for mobile, web, and marketing with
-                Hello World Software Agency. Seamlessly connect with your audience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-
+      
       <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
       <div className="flex w-full text-white">
         <div className="flex items-center flex-col">
@@ -87,18 +72,10 @@ function UpperSection() {
             Empower Your Vision
           </motion.h1>
 
-          {/* Typing Animation */}
+          {/* Typing Animation (No Dimming) */}
           <div className="flex text-6xl my-4">
-            <span className="font-bold mr-3"> .</span>
-            <motion.span
-              className="text-6xl text-blue-400"
-              key={currentText}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              {currentText}
-            </motion.span>
+            <span className="font-bold mr-3">.</span>
+            <span className="text-6xl text-blue-400 font-bold">{currentText}</span>
           </div>
 
           {/* Paragraph */}
