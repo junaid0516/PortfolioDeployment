@@ -82,6 +82,10 @@ function PotentialPage() {
           <p className="animate-pulse">Client Ratings</p>
         </div>
       </div>
+
+
+
+      {/* What we Offer Section */}
       <div className="text-white">
     {/* Section Title */}
     <div className="flex sm:justify-center">
@@ -92,29 +96,29 @@ function PotentialPage() {
 
     {/* First Row of Cards */}
     <motion.div
-      className="flex flex-col sm:flex-row gap-3 mt-6 2xl:mt-10 sm:gap-6"
+      className="flex flex-col sm:flex-row gap-3 mt-6 2xl:mt-10 sm:gap-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
       {[
         {
-          Heading: "Website Development",
+          Heading: "Web Development",
           putImage: webicon,
           Details:
-            "Crafting Personalized Brand Experiences Across Different Devices with Mobile plus Web Development. Seamlessly Connect with Your Audience wherever they are.",
+            "Crafting responsive, user-friendly websites that drive engagement and deliver seamless experiences across all devices.",
         },
         {
-          Heading: "Search Engine Optimization",
+          Heading: "Mobile Applications ",
           putImage: webicon,
           Details:
-            "Maximize Your Online Presence with Effective SEO. Increase Visibility and Attract Targeted Leads. Achieve your Online Goals Faster and More Efficiently.",
+            "Building innovative, high-performance mobile apps for iOS and Android that transform ideas into impactful digital solutions.",
         },
         {
-          Heading: "Search Engine Marketing",
+          Heading: "Search Engine Optimization (SEO)",
           putImage: webicon,
           Details:
-            "We Help to Improve your Business’s Success Online. If you Want to Increase Visibility, Traffic, Sales, or All The Above, Our SEM Management Services can Help You.",
+            "We Help to Improve your Business’s Success Online. If you Want to Increase Visibility, Traffic, Sales, or All The Above, Our SEO Services can Help You.",
         },
       ].map((card, index) => (
         <motion.div
@@ -135,7 +139,7 @@ function PotentialPage() {
 
     {/* Second Row of Cards */}
     <motion.div
-      className="flex flex-col sm:flex-row gap-3 mt-3 sm:mt-10 sm:gap-6"
+      className="flex flex-col sm:flex-row gap-3 mt-3 sm:mt-10 sm:gap-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -145,19 +149,19 @@ function PotentialPage() {
           Heading: "Graphic Designing",
           putImage: webicon,
           Details:
-            "Influence Customer Behavior Through Effective Brand Recognition and Connection. Create a Memorable Brand Experience That Sets You Apart.",
+            "Creating visually stunning designs that captivate audiences and elevate your brand’s identity.",
+        },
+        {
+          Heading: "DevOps",
+          putImage: webicon,
+          Details:
+            "Streamlining development and operations with cutting-edge DevOps solutions for faster, reliable, and scalable software delivery.",
         },
         {
           Heading: "Social Media Marketing",
           putImage: webicon,
           Details:
-            "Improve your Credibility and Brand Presence on Social Media by Targeting Custom-Made Marketing Strategies. Connect with Your Audience.",
-        },
-        {
-          Heading: "Influencer and PR Services",
-          putImage: webicon,
-          Details:
-            "We Harness the Power of Creators to Drive True Human Influence. Connect with Your Audience Through Authentic Storytelling.",
+            "Driving brand growth with tailored social media strategies that engage, inspire, and convert.",
         },
       ].map((card, index) => (
         <motion.div
