@@ -52,6 +52,12 @@ function PotentialPage() {
     }),
   };
 
+  const hoverEffect = {
+    scale: 1.05,
+    y: -5,
+    boxShadow: "0px 10px 20px rgba(255, 255, 255, 0.2)",
+  };
+
 
   return (
     <div className=" flex flex-col items-center h-full pb-10 sm:pb-14 lg:pb-24 px-2">
@@ -76,7 +82,7 @@ function PotentialPage() {
           <p className="animate-pulse">Client Ratings</p>
         </div>
       </div>
-     <div className="text-white">
+      <div className="text-white">
     {/* Section Title */}
     <div className="flex sm:justify-center">
       <h1 className="font-bold text-3xl xl:text-4xl 2xl:text-5xl mt-10">
@@ -111,7 +117,13 @@ function PotentialPage() {
             "We Help to Improve your Business’s Success Online. If you Want to Increase Visibility, Traffic, Sales, or All The Above, Our SEM Management Services can Help You.",
         },
       ].map((card, index) => (
-        <motion.div key={index} custom={index} variants={fadeInLeft}>
+        <motion.div
+          key={index}
+          custom={index}
+          variants={fadeInLeft}
+          whileHover={hoverEffect} // Apply hover effect
+          transition={{ type: "spring", stiffness: 200, damping: 10 }}
+        >
           <CardForPotentialPage
             Heading={card.Heading}
             putImage={card.putImage}
@@ -148,7 +160,13 @@ function PotentialPage() {
             "We Harness the Power of Creators to Drive True Human Influence. Connect with Your Audience Through Authentic Storytelling.",
         },
       ].map((card, index) => (
-        <motion.div key={index} custom={index} variants={fadeInLeft}>
+        <motion.div
+          key={index}
+          custom={index}
+          variants={fadeInLeft}
+          whileHover={hoverEffect} // Apply hover effect
+          transition={{ type: "spring", stiffness: 200, damping: 10 }}
+        >
           <CardForPotentialPage
             Heading={card.Heading}
             putImage={card.putImage}
