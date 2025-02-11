@@ -42,13 +42,15 @@ function Technologies() {
           <button onClick={() => setActiveSection("back_end")}>Back End</button>
           <button onClick={() => setActiveSection("mobile")}>Mobile</button>
           <button onClick={() => setActiveSection("blockchain")}>Blockchain</button>
-          <button onClick={() => setActiveSection("devops_ml")}>DevOps & ML</button>
+          <button onClick={() => setActiveSection("devops_ml")}>DevOps</button>
         </div>
 
-        {/* Content Section */}
         <div className="mt-6">
           {activeSection === "full_stack" && <FullStack />}
-          {/* Add other components here based on activeSection */}
+          {activeSection === "back_end" && <FullStack />}
+          {activeSection === "mobile" && <FullStack />}
+          {activeSection === "blockchain" && <FullStack />}
+          {activeSection === "devops_ml" && <FullStack />}
         </div>
       </div>
     </div>
