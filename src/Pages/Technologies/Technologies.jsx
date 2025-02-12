@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import FullStack from "../../assets/Components/Technologies/FullStack";
-import FrontEnd from "../../assets/Components/Technologies/FrontEnd";
-import BackEnd from "../../assets/Components/Technologies/BackEnd";
-import Mobile from "../../assets/Components/Technologies/Mobile";
-import BlockChain from "../../assets/Components/Technologies/BlockChain";
-import Devops_ML from "../../assets/Components/Technologies/Devops&ML";
 
 function Technologies() {
   const [activeSection, setActiveSection] = useState("full_stack"); // State for active section
@@ -71,11 +66,11 @@ function Technologies() {
 
         <div className="mt-6">
           {activeSection === "full_stack" && <FullStack />}
-          {activeSection === "front_end" && <FrontEnd />}
-          {activeSection === "back_end" && <BackEnd />}
-          {activeSection === "mobile" && <Mobile />}
-          {activeSection === "blockchain" && <BlockChain />}
-          {activeSection === "devops_ml" && <Devops_ML />}
+          {activeSection === "front_end" && <FullStack />}
+          {activeSection === "back_end" && <FullStack />}
+          {activeSection === "mobile" && <FullStack />}
+          {activeSection === "blockchain" && <FullStack />}
+          {activeSection === "devops_ml" && <FullStack />}
         </div>
         </div>
       </div>
