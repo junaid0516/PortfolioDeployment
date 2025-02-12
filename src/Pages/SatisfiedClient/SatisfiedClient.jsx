@@ -92,15 +92,15 @@ function SatisfiedClient() {
 
         {/* Next Review - Tilted Right */}
         <motion.div
-  className="absolute right-[-140px] w-64 mr-10 p-4 text-white rounded-xl shadow-lg hidden sm:block
-             bg-gradient-to-l from-[#54696369] to-grey-700"
-  initial={{ rotate: 20, opacity: 0.4, x: 80 }}
-  animate={{ rotate: 20, opacity: 0.6, x: 80 }}
-  transition={{ duration: 0.5 }}
->
-  <h3 className="text-lg font-bold">{reviews[(currentIndex + 1) % reviews.length].name}</h3>
-  <p className="text-sm">{reviews[(currentIndex + 1) % reviews.length].review}</p>
-</motion.div>
+          className="absolute right-[-140px] w-64 mr-10 p-4 text-white rounded-xl shadow-lg hidden sm:block
+                    bg-gradient-to-l from-[#54696369] to-grey-700"
+          initial={{ rotate: 20, opacity: 0.4, x: 80 }}
+          animate={{ rotate: 20, opacity: 0.6, x: 80 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3 className="text-lg font-bold">{reviews[(currentIndex + 1) % reviews.length].name}</h3>
+          <p className="text-sm">{reviews[(currentIndex + 1) % reviews.length].review}</p>
+        </motion.div>
       </div>
 
       {/* Navigation Buttons */}
