@@ -3,6 +3,7 @@ import { useState } from "react";
 import FullStack from "../../assets/Components/Technologies/FullStack";
 import OrangeBall from "../../assets/Images/OrangeBall.svg";
 import YellowBall from "../../assets/Images/YellowBall.svg";
+import FrontEnd from "../../assets/Components/Technologies/FrontEnd";
 
 function Technologies() {
   const [activeSection, setActiveSection] = useState("full_stack"); // State for active section
@@ -101,7 +102,7 @@ function Technologies() {
 
         <div className="mt-6">
           {activeSection === "full_stack" && <FullStack />}
-          {activeSection === "front_end" && <FullStack />}
+          {activeSection === "front_end" && <FrontEnd />}
           {activeSection === "back_end" && <FullStack />}
           {activeSection === "mobile" && <FullStack />}
           {activeSection === "blockchain" && <FullStack />}
