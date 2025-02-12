@@ -1,10 +1,10 @@
 
-import jAVA from "../../Images/chairman_pti.svg";
-import Lamp from "../../Images/chairman_pti.svg";
-import LEMP from "../../Images/chairman_pti.svg";
-import MEAN from "../../Images/chairman_pti.svg";
-import MERN from "../../Images/chairman_pti.svg";
-import MEVN from "../../Images/chairman_pti.svg";
+import jAVA from "../../Images/Java.png";
+import Lamp from "../../Images/Lamp.png";
+import LEMP from "../../Images/LEMPR.svg";
+import MEAN from "../../Images/MEAN.png";
+import MERN from "../../Images/MERN.png";
+import MEVN from "../../Images/MEVN.png";
 function FullStack() {
   return (
     <div className=" ">
