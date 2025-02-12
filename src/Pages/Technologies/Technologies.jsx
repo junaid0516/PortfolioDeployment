@@ -70,12 +70,12 @@ function Technologies() {
         </div>
 
         <div className="mt-6">
-          {activeSection === "full_stack" && <FullStack />}
+          {/* {activeSection === "full_stack" && <FullStack />}
           {activeSection === "front_end" && <FrontEnd />}
           {activeSection === "back_end" && <BackEnd />}
           {activeSection === "mobile" && <Mobile />}
           {activeSection === "blockchain" && <BlockChain />}
-          {activeSection === "devops_ml" && <Devops_ML />}
+          {activeSection === "devops_ml" && <Devops_ML />} */}
         </div>
         </div>
       </div>
