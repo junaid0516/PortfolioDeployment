@@ -41,7 +41,7 @@ function Technologies() {
           <button className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl bg-green-400 mb-4 text-white font-semibold `} >
             Full Stack
           </button>
-          {/* {<FullStack />} */}
+          {<FullStack />}
           </div>
         </div>
         <div className="hidden sm:block">
@@ -70,12 +70,12 @@ function Technologies() {
         </div>
 
         <div className="mt-6">
-          {/* {activeSection === "full_stack" && <FullStack />}
+          {activeSection === "full_stack" && <FullStack />}
           {activeSection === "front_end" && <FrontEnd />}
           {activeSection === "back_end" && <BackEnd />}
           {activeSection === "mobile" && <Mobile />}
           {activeSection === "blockchain" && <BlockChain />}
-          {activeSection === "devops_ml" && <Devops_ML />} */}
+          {activeSection === "devops_ml" && <Devops_ML />}
         </div>
         </div>
       </div>
