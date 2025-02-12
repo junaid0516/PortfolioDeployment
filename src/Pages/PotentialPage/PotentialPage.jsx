@@ -82,9 +82,9 @@ function PotentialPage() {
           <p className="animate-pulse">Client Ratings</p>
         </div>
       </div>
-      <div className="text-white">
+      <div className="text-white pt-[5rem]">
     {/* Section Title */}
-    <div className="flex sm:justify-center">
+    <div className="flex sm:justify-center pb-[5rem]">
       <h1 className="font-bold text-3xl xl:text-4xl 2xl:text-5xl mt-10">
         What we Offer
       </h1>

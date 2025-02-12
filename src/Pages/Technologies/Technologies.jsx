@@ -15,31 +15,31 @@ function Technologies() {
               <div className=" flex gap-5">
                 <div className=" flex items-center justify-center">
                   <p className="">Mobile</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={OrangeBall}/>
                 </div>
                 <div className=" flex items-center justify-center">
                   <p>Web</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={OrangeBall}/>
                 </div>
               </div>
               <div className=" flex gap-5">
               <div className=" flex items-center justify-center">
                   <p>DevOps</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={OrangeBall}/>
                 </div>
                 <div className=" flex items-center justify-center">
                   <p className=" text-blue-400">Social</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={YellowBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={YellowBall}/>
                 </div>
               </div>
               <div className=" flex gap-5">
               <div className=" flex items-center justify-center">
                   <p>Agile</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={OrangeBall}/>
                 </div>
                 <div className=" flex items-center justify-center">
                   <p>Cloud</p>
-                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                  <img className=" w-4 h-4 mt-2 ml-3" src={OrangeBall}/>
                 </div>
               </div>
             </div>
