@@ -1,12 +1,68 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import FullStack from "../../assets/Components/Technologies/FullStack";
+import OrangeBall from "../../assets/Images/OrangeBall.svg";
+import YellowBall from "../../assets/Images/YellowBall.svg";
 
 function Technologies() {
   const [activeSection, setActiveSection] = useState("full_stack"); // State for active section
 
   return (
-    <div className="flex justify-center h-full p-30">
+    <div className="flex flex-col justify-center h-full p-30">
+
+
+       <div className=" pb-[10rem] font-bold flex text-white flex-col gap-2 sm:gap-5 items-center  text-3xl sm:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl">
+              <div className=" flex gap-5">
+                <div className=" flex items-center justify-center">
+                  <p className="">Mobile</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                </div>
+                <div className=" flex items-center justify-center">
+                  <p>Web</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                </div>
+              </div>
+              <div className=" flex gap-5">
+              <div className=" flex items-center justify-center">
+                  <p>DevOps</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                </div>
+                <div className=" flex items-center justify-center">
+                  <p className=" text-blue-400">Social</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={YellowBall}/>
+                </div>
+              </div>
+              <div className=" flex gap-5">
+              <div className=" flex items-center justify-center">
+                  <p>Agile</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                </div>
+                <div className=" flex items-center justify-center">
+                  <p>Cloud</p>
+                  <img className=" w-2 h-2 mt-2 ml-3" src={OrangeBall}/>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="px-4 pt-4 sm:pt-0 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 flex sm:pl-24 flex-col w-full">
         {/* Heading Section */}
         <div className="text-white flex flex-col items-center">
