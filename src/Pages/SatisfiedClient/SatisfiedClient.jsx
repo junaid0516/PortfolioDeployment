@@ -104,7 +104,7 @@ function SatisfiedClient() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex gap-6 mt-20">
+      <div className="flex gap-6 mt-40">
         <button
           className="bg-white text-green-500 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
           onClick={prevReview}
