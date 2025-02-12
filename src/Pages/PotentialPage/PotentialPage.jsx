@@ -158,7 +158,7 @@ function PotentialPage() {
             "Streamlining development and operations with cutting-edge DevOps solutions for faster, reliable, and scalable software delivery.",
         },
         {
-          Heading: "Social Media Marketing",
+          Heading: "Digital Marketing",
           putImage: webicon,
           Details:
             "Driving brand growth with tailored social media strategies that engage, inspire, and convert.",

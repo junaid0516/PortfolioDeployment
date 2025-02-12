@@ -1,5 +1,6 @@
 import  { useState, useEffect } from "react";
 import burgermenu from "../../assets/Images/burgermenu.svg";
+import mainlogo from "../../assets/Images/mainlogo.png";
 import bgvideo from "../../assets/videos/bgVideo.mp4";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -59,7 +60,7 @@ function UpperSection() {
       </video>
 
       
-      <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative z-10">
+      <div className="px-4 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 relative ">
       <div className="flex w-full text-white">
         <div className="flex items-center flex-col">
           {/* Main Heading */}
@@ -97,9 +98,12 @@ function UpperSection() {
 
 
       {/* Navbar */}
-      <div className="fixed top-5 left-0 w-full flex justify-center items-start z-20 font-[roboto]">
+      <div className="fixed top-5 left-0 w-full flex justify-center items-start  font-[roboto]">
         <div className="bg-[#272727] w-full max-w-6xl h-12 rounded-3xl shadow-lg flex items-center px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-row ">
+            <img src={mainlogo} height={25} width={30} className="mr-1"/>
           <h1 className="text-white font-bold text-md lg:text-xl">NyxLogics</h1>
+          </div>
           <ul className="hidden sm:flex gap-10 ml-auto text-white">
             <li className="hover:text-green-400 cursor-pointer">Home</li>
             <li className="hover:text-green-400 cursor-pointer">About Us</li>
