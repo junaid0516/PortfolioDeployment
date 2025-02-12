@@ -36,14 +36,14 @@ function SatisfiedClient() {
   };
 
   return (
-    <div className="flex flex-col items-center  justify-center font-[roboto] overflow-x-hidden">
+    <div className="flex flex-col items-center  justify-center font-[roboto] h-full overflow-x-hidden">
       {/* Section Title */}
       <h1 className="font-[roboto] text-5xl font-bold text-center text-white pb-10 lg:p-20 ">
         Don't take our word for it. Take theirs
       </h1>
 
       {/* Reviews Container */}
-      <div className="relative flex items-center  justify-center w-full lg:w-xl xl:w-3xl h-[300px] pt-2 sm:pt-20">
+      <div className="relative flex items-center justify-center w-full lg:w-xl xl:w-3xl h-[300px] pt-2 sm:pt-20">
         {/* Previous Review - Tilted Left */}
         <motion.div
           className="absolute left-[6rem] lg:left-[-140px] w-48 lg:w-52 xl:w-64 p-4 ml-10 text-white rounded-xl shadow-lg hidden sm:block
@@ -101,7 +101,7 @@ function SatisfiedClient() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex gap-6 pt-10 sm:pt-28 lg:pt-36">
+      <div className="flex gap-6 pt-10 sm:pt-28 lg:pt-40">
         <button
           className="bg-white text-green-500 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
           onClick={prevReview}

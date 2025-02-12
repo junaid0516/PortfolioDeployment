@@ -1,14 +1,15 @@
 
 import PotentialPage from "../PotentialPage/PotentialPage";
 import UpperSection from "../UpperSection/UpperSection";
-import Real_Impact from "../Real_Impact/Real_Impact";
 import Technologies from "../Technologies/Technologies";
 import SatisfiedClient from "../SatisfiedClient/SatisfiedClient";
+import ContactUs from "../ContactUs/ContactUs";
+// import Real_Impact from "../Real_Impact/Real_Impact";
 // import ThreeCards from "../ThreeCards/ThreeCards";
 // import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
 function MainPage() {
   return (
-   <>
+   <div className=" overflow-x-hidden">
     <div className="" >
     <UpperSection/>
     </div>
@@ -21,6 +22,9 @@ function MainPage() {
     <div className="sm:h-screen bg-[#292828]" >
       <SatisfiedClient/>
     </div>
+    <div className="sm:h-screen bg-[#292828]" >
+      <ContactUs/>
+    </div>
     {/* <div className="sm:h-screen bg-[#292828] pt-20" >
       <Real_Impact/>
     </div> */}
@@ -30,7 +34,7 @@ function MainPage() {
     <div className="sm:h-screen bg-[#272727] " >
       <InnovativeSolutions/>
     </div> */}
-</>
+</div>
   );
 }
 
