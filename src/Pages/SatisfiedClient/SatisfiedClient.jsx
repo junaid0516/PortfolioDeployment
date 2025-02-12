@@ -36,23 +36,23 @@ function SatisfiedClient() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center font-[roboto] overflow-x-hidden">
+    <div className="flex flex-col items-center  justify-center font-[roboto] overflow-x-hidden">
       {/* Section Title */}
-      <h1 className="font-[roboto] text-5xl font-bold text-center text-white mb-30">
+      <h1 className="font-[roboto] text-5xl font-bold text-center text-white pb-10 lg:p-20 ">
         Don't take our word for it. Take theirs
       </h1>
 
       {/* Reviews Container */}
-      <div className="relative flex items-center justify-center w-full lg:w-xl xl:w-3xl h-[300px] pt-20">
+      <div className="relative flex items-center  justify-center w-full lg:w-xl xl:w-3xl h-[300px] pt-2 sm:pt-20">
         {/* Previous Review - Tilted Left */}
         <motion.div
-          className="absolute left-[-140px] w-52 xl:w-64 p-4 ml-10 text-white rounded-xl shadow-lg hidden sm:block
+          className="absolute left-[6rem] lg:left-[-140px] w-48 lg:w-52 xl:w-64 p-4 ml-10 text-white rounded-xl shadow-lg hidden sm:block
                     bg-gradient-to-r from-[#54696369] to-grey-700"
           initial={{ rotate: -20, opacity: 0.4, x: -80 }}
           animate={{ rotate: -20, opacity: 0.6, x: -80 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-lg font-bold">{reviews[(currentIndex - 1 + reviews.length) % reviews.length].name}</h3>
+          <h3 className="lg:text-lg font-bold">{reviews[(currentIndex - 1 + reviews.length) % reviews.length].name}</h3>
           <p className="text-sm">{reviews[(currentIndex - 1 + reviews.length) % reviews.length].review}</p>
         </motion.div>
 
@@ -60,7 +60,7 @@ function SatisfiedClient() {
         <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
-          className="absolute w-80 h-auto sm:p-3 lg:p-6 text-white rounded-2xl shadow-xl text-center flex flex-col items-center
+          className="absolute w-72 lg:w-96 h-auto py-4 sm:p-3 lg:p-6 text-white rounded-2xl z-10 shadow-xl text-center flex flex-col items-center
                     bg-gradient-to-r from-green-500 to-green-700"
           initial={{ x: direction === 1 ? 100 : -100, opacity: 0, scale: 0.9 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -73,10 +73,10 @@ function SatisfiedClient() {
           </div>
 
           {/* Client Name */}
-          <h3 className="text-2xl font-bold">{reviews[currentIndex].name}</h3>
+          <h3 className=" text-lg lg:text-2xl font-bold">{reviews[currentIndex].name}</h3>
 
           {/* Client Review */}
-          <p className="text-lg mt-2">{reviews[currentIndex].review}</p>
+          <p className=" text-sm lg:text-lg mt-2">{reviews[currentIndex].review}</p>
 
           {/* Star Rating */}
           <div className="flex justify-center mt-3">
@@ -87,12 +87,9 @@ function SatisfiedClient() {
         </motion.div>
 
         </AnimatePresence>
-
-        
-
         {/* Next Review - Tilted Right */}
         <motion.div
-          className="absolute right-[-140px] w-64 mr-10 p-4 text-white rounded-xl shadow-lg hidden sm:block
+          className="absolute right-20 lg:right-[-140px] w-56 lg:w-64 mr-10 p-4 text-white rounded-xl shadow-lg hidden sm:block
                     bg-gradient-to-l from-[#54696369] to-grey-700"
           initial={{ rotate: 20, opacity: 0.4, x: 80 }}
           animate={{ rotate: 20, opacity: 0.6, x: 80 }}
@@ -104,7 +101,7 @@ function SatisfiedClient() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex gap-6 mt-40">
+      <div className="flex gap-6 pt-10 sm:pt-28 lg:pt-36">
         <button
           className="bg-white text-green-500 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
           onClick={prevReview}
