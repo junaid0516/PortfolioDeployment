@@ -36,17 +36,17 @@ function SatisfiedClient() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center font-[roboto]">
+    <div className="flex flex-col items-center justify-center font-[roboto] overflow-x-hidden">
       {/* Section Title */}
       <h1 className="font-[roboto] text-5xl font-bold text-center text-white mb-30">
         Don't take our word for it. Take theirs
       </h1>
 
       {/* Reviews Container */}
-      <div className="relative flex items-center justify-center w-full max-w-3xl h-[300px]">
+      <div className="relative flex items-center justify-center w-full lg:w-xl xl:w-3xl h-[300px]">
         {/* Previous Review - Tilted Left */}
         <motion.div
-          className="absolute left-[-140px] w-64 p-4 text-white rounded-xl shadow-lg hidden sm:block
+          className="absolute left-[-140px] w-52 xl:w-64 p-4 ml-10 text-white rounded-xl shadow-lg hidden sm:block
                     bg-gradient-to-r from-[#54696369] to-grey-700"
           initial={{ rotate: -20, opacity: 0.4, x: -80 }}
           animate={{ rotate: -20, opacity: 0.6, x: -80 }}
@@ -60,7 +60,7 @@ function SatisfiedClient() {
         <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
-          className="absolute w-100 h-auto p-6 text-white rounded-2xl shadow-xl text-center flex flex-col items-center
+          className="absolute w-80 h-auto sm:p-3 lg:p-6 text-white rounded-2xl shadow-xl text-center flex flex-col items-center
                     bg-gradient-to-r from-green-500 to-green-700"
           initial={{ x: direction === 1 ? 100 : -100, opacity: 0, scale: 0.9 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -92,7 +92,7 @@ function SatisfiedClient() {
 
         {/* Next Review - Tilted Right */}
         <motion.div
-  className="absolute right-[-140px] w-64 p-4 text-white rounded-xl shadow-lg hidden sm:block
+  className="absolute right-[-140px] w-64 mr-10 p-4 text-white rounded-xl shadow-lg hidden sm:block
              bg-gradient-to-l from-[#54696369] to-grey-700"
   initial={{ rotate: 20, opacity: 0.4, x: 80 }}
   animate={{ rotate: 20, opacity: 0.6, x: 80 }}
