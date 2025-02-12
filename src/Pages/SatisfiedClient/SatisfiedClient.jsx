@@ -43,7 +43,7 @@ function SatisfiedClient() {
       </h1>
 
       {/* Reviews Container */}
-      <div className="relative flex items-center justify-center w-full lg:w-xl xl:w-3xl h-[300px]">
+      <div className="relative flex items-center justify-center w-full lg:w-xl xl:w-3xl h-[300px] pt-20">
         {/* Previous Review - Tilted Left */}
         <motion.div
           className="absolute left-[-140px] w-52 xl:w-64 p-4 ml-10 text-white rounded-xl shadow-lg hidden sm:block

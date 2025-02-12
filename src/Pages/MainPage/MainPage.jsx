@@ -21,7 +21,7 @@ function MainPage() {
     <div className="sm:h-screen bg-[#292828]" >
       <SatisfiedClient/>
     </div>
-    <div className="sm:h-screen bg-[#292828]" >
+    <div className="sm:h-screen bg-[#292828] pt-20" >
       <Real_Impact/>
     </div>
     {/* <div className="sm:h-screen bg-[#272727] " >
