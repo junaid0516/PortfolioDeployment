@@ -6,7 +6,7 @@ function Technologies() {
   const [activeSection, setActiveSection] = useState("full_stack"); // State for active section
 
   return (
-    <div className="flex justify-center h-full">
+    <div className="flex justify-center h-full p-30">
       <div className="px-4 pt-4 sm:pt-0 sm:px-20 lg:px-20 xl:px-32 2xl:px-40 flex sm:pl-24 flex-col w-full">
         {/* Heading Section */}
         <div className="text-white flex flex-col items-center">
