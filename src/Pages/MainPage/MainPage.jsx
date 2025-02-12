@@ -15,9 +15,9 @@ function MainPage() {
     <div className=" bg-[#292828] " >
       <PotentialPage/>
     </div>
-    <div className="sm:h-screen bg-[#292828]" >
+    {/* <div className="sm:h-screen bg-[#292828]" >
       <Technologies/>
-    </div>
+    </div> */}
     <div className="sm:h-screen bg-[#292828]" >
       <SatisfiedClient/>
     </div>
