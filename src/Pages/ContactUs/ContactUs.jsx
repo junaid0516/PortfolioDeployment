@@ -26,7 +26,7 @@ function ContactUs() {
   };
 
   return (
-    <div ref={sectionRef} className="flex flex-col h-full">
+    <div ref={sectionRef} className="flex flex-col h-full font-[roboto]">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -37,7 +37,7 @@ function ContactUs() {
         <p className="text-white text-5xl font-semibold mt-3 sm:mt-0">Contact Us</p>
       </motion.div>
 
-      <div className="rounded-lg w-full px-6 flex flex-col gap-4 sm:flex-row ">
+      <div className="rounded-lg w-full px-6 flex flex-col gap-4 sm:flex-row lg:mt-16 ">
         {/* Form Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -45,7 +45,7 @@ function ContactUs() {
           transition={{ duration: 0.9 }}
           className="w-full sm:w-[50%] flex flex-col justify-center items-center"
         >
-          <h2 className="text-2xl font-bold text-center text-green-400 sm:text-4xl mt-4 sm:mt-0 mb-4">
+          <h2 className="text-2xl font-bold text-center text-green-400 sm:text-4xl mt-4 sm:mt-0 mb-14">
             Get in touch
           </h2>
 
@@ -106,7 +106,7 @@ function ContactUs() {
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="w-full sm:w-[50%] flex flex-col text-white justify-center px-20  bg-gradient-to-r from-[#54696369] to-grey-700 rounded-3xl mt-16 mb-2"
+          className="w-full sm:w-[50%] flex flex-col text-white justify-center px-20  bg-gradient-to-r from-[#54696369] to-grey-700 rounded-3xl mt-24 mb-2"
         >
           <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">

@@ -4,12 +4,13 @@ import FullStack from "../../assets/Components/Technologies/FullStack";
 import OrangeBall from "../../assets/Images/OrangeBall.svg";
 import YellowBall from "../../assets/Images/YellowBall.svg";
 import FrontEnd from "../../assets/Components/Technologies/FrontEnd";
+import BackEnd from "../../assets/Components/Technologies/BackEnd";
 
 function Technologies() {
   const [activeSection, setActiveSection] = useState("full_stack"); // State for active section
 
   return (
-    <div className="flex flex-col justify-center h-full p-3  pb-10 sm:pb-0">
+    <div className="flex flex-col justify-center h-full p-3 pb-10 sm:pb-0">
        <div className="pb-[2rem] sm:pb-[4rem] font-bold flex text-white flex-col gap-2 sm:gap-5 items-center  text-3xl sm:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl">
               <div className=" flex gap-5">
                 <div className=" flex items-center justify-center">
@@ -103,7 +104,7 @@ function Technologies() {
         <div className="mt-6">
           {activeSection === "full_stack" && <FullStack />}
           {activeSection === "front_end" && <FrontEnd />}
-          {activeSection === "back_end" && <FullStack />}
+          {activeSection === "back_end" && <BackEnd />}
           {activeSection === "mobile" && <FullStack />}
           {activeSection === "blockchain" && <FullStack />}
           {activeSection === "devops_ml" && <FullStack />}

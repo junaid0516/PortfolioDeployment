@@ -9,7 +9,7 @@ import ContactUs from "../ContactUs/ContactUs";
 // import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
 function MainPage() {
   return (
-   <div className=" overflow-x-hidden">
+   <div className=" overflow-x-hidden  overflow-hidden ">
     <div className="" >
     <UpperSection/>
     </div>
