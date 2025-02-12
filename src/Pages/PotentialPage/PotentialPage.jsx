@@ -99,22 +99,22 @@ function PotentialPage() {
     >
       {[
         {
-          Heading: "Website Development",
+          Heading: "Web Development",
           putImage: webicon,
           Details:
-            "Crafting Personalized Brand Experiences Across Different Devices with Mobile plus Web Development. Seamlessly Connect with Your Audience wherever they are.",
+            "Crafting responsive, user-friendly websites that drive engagement and deliver seamless experiences across all devices.",
         },
         {
-          Heading: "Search Engine Optimization",
+          Heading: "Mobile Application Development",
           putImage: webicon,
           Details:
-            "Maximize Your Online Presence with Effective SEO. Increase Visibility and Attract Targeted Leads. Achieve your Online Goals Faster and More Efficiently.",
+            "Building innovative, high-performance mobile apps for iOS and Android that transform ideas into impactful digital solutions.",
         },
         {
-          Heading: "Search Engine Marketing",
+          Heading: "Search Engine Optimization (SEO)",
           putImage: webicon,
           Details:
-            "We Help to Improve your Business’s Success Online. If you Want to Increase Visibility, Traffic, Sales, or All The Above, Our SEM Management Services can Help You.",
+            "Optimizing your online presence with proven SEO strategies to boost visibility, traffic, and conversions.",
         },
       ].map((card, index) => (
         <motion.div
@@ -142,22 +142,22 @@ function PotentialPage() {
     >
       {[
         {
+          Heading: "DevOps",
+          putImage: webicon,
+          Details:
+            "Streamlining development and operations with cutting-edge DevOps solutions for faster, reliable, and scalable software delivery.",
+        },
+        {
           Heading: "Graphic Designing",
           putImage: webicon,
           Details:
-            "Influence Customer Behavior Through Effective Brand Recognition and Connection. Create a Memorable Brand Experience That Sets You Apart.",
+            "Creating visually stunning designs that captivate audiences and elevate your brand’s identity.",
         },
         {
-          Heading: "Social Media Marketing",
+          Heading: "Digital Marketing",
           putImage: webicon,
           Details:
-            "Improve your Credibility and Brand Presence on Social Media by Targeting Custom-Made Marketing Strategies. Connect with Your Audience.",
-        },
-        {
-          Heading: "Influencer and PR Services",
-          putImage: webicon,
-          Details:
-            "We Harness the Power of Creators to Drive True Human Influence. Connect with Your Audience Through Authentic Storytelling.",
+            "Driving brand growth with tailored social media strategies that engage, inspire, and convert.",
         },
       ].map((card, index) => (
         <motion.div
