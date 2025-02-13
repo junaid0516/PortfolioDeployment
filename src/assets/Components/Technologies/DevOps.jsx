@@ -1,7 +1,7 @@
 import Amazon from "../../Images/AWS.png";
 import Azure from "../../Images/Azure.png";
 import docker from "../../Images/docker.png";
-import GCP from "../../Images/GCP.png";
+// import GCP from "../../Images/GCP.png";
 
 function DevOps() {
   return (
@@ -20,7 +20,7 @@ function DevOps() {
           <p className=" text-2xl font-semibold text-white mt-1">DOCKER</p>
         </div>
         <div className="w-20 h-20 sm:w-40 sm:h-24 flex flex-col justify-between items-center">
-          <img className=" w-14 h-12" src={GCP} alt="" />
+          <img className=" w-14 h-12" src={docker} alt="" />
           <p className=" text-2xl font-semibold text-white mt-1">GCP</p>
         </div>
 
