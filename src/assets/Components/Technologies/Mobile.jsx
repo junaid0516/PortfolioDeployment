@@ -5,6 +5,7 @@ import Kotlin from "../../Images/Kotlin.png";
 import swift from "../../Images/swift.png";
 import react from "../../Images/react.png";
 function Mobile() {
+    // test deployment 
   return (
     <div className=" overflow-hidden ">
       <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-none lg:flex justify-center items-start gap-7 lg:gap-20 xl:gap-6 lg:pr-20 pt-4">
