@@ -9,7 +9,7 @@ import php from "../../Images/Dotnet.png";
 function BackEnd() {
   return (
     <div className=" overflow-hidden  ">
-      <div className=" sm:grid grid-cols-4 xl:grid-cols-7 hidden pt-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-none lg:flex justify-center items-start gap-7 lg:gap-20 xl:gap-6 lg:pr-20 pt-4">
         <div className=" w-40 h-24 flex flex-col justify-between items-center">
           <img className=" w-20 h-11 mt-3" src={django} alt="" />
           <p className=" text-2xl font-semibold text-white mt-1">DJANGO</p>

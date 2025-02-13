@@ -79,25 +79,25 @@ function Technologies() {
         <div className="hidden sm:block">
         <div className="bg-[#54696369] h-8 lg:h-10 mt-10 rounded-2xl w-full flex justify-evenly">
           <button 
-            className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "full_stack" ? "bg-green-400 mt-[-0.25rem]" : " mt-[-0.25rem]"}`}
+            className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12  rounded-3xl ${activeSection === "full_stack" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem]  text-white"}`}
             onClick={() => setActiveSection("full_stack")}
           >
             Full Stack
           </button>
           <button
-          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "front_end" ? "bg-green-400 mt-[-0.25rem]" : "mt-[-0.25rem]"}`}
+          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12  rounded-3xl ${activeSection === "front_end" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem] text-white "}`}
           onClick={() => setActiveSection("front_end")}>Front End</button>
           <button
-          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "back_end" ? "bg-green-400 mt-[-0.25rem]" : "mt-[-0.25rem]"}`}
+          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "back_end" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem] text-white "}`}
           onClick={() => setActiveSection("back_end")}>Back End</button>
           <button
-          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "mobile" ? "bg-green-400 mt-[-0.25rem]" : "mt-[-0.25rem]"}`}
+          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "mobile" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem] text-white "}`}
           onClick={() => setActiveSection("mobile")}>Mobile</button>
           <button
-          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "blockchain" ? "bg-green-400 mt-[-0.25rem]" : "mt-[-0.25rem]"}`}
+          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "blockchain" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem] text-white "}`}
           onClick={() => setActiveSection("blockchain")}>Blockchain</button>
           <button
-          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "devops_ml" ? "bg-green-400 mt-[-0.25rem]" : "mt-[-0.25rem]"}`}
+          className={`px-4 cursor-pointer lg:px-10 h-10 lg:h-12 rounded-3xl ${activeSection === "devops_ml" ? "bg-green-500 mt-[-0.25rem] text-black" : "mt-[-0.25rem] text-white "}`}
           onClick={() => setActiveSection("devops_ml")}>DevOps</button>
         </div>
 

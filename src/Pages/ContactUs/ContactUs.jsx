@@ -106,7 +106,7 @@ function ContactUs() {
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="w-full sm:w-[50%] flex flex-col text-white justify-center px-20  bg-gradient-to-r from-[#54696369] to-grey-700 rounded-3xl mt-24 mb-2"
+          className="w-full sm:w-[50%] flex flex-col text-white justify-center p-4 sm:px-10 lg:px-20  bg-gradient-to-r from-[#54696369] to-grey-700 rounded-3xl sm:mt-24 mb-2"
         >
           <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
@@ -114,8 +114,7 @@ function ContactUs() {
             <h1 className="text-xl font-bold">Address</h1>
             </div>
             <p className="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,nihil accusamus impedit sed? <br />
-              Facere, eaque id et magni, exercitationem asperiores 
+              Lahore , Rahim yar khan Punjab <br /> United State Of America  
             </p>
           </div>
           <div className="flex flex-col py-6 ">
