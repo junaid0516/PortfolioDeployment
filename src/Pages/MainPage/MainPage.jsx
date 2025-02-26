@@ -4,6 +4,7 @@ import UpperSection from "../UpperSection/UpperSection";
 import Technologies from "../Technologies/Technologies";
 import SatisfiedClient from "../SatisfiedClient/SatisfiedClient";
 import ContactUs from "../ContactUs/ContactUs";
+// import Footer from "../Footer/Footer";
 // import Real_Impact from "../Real_Impact/Real_Impact";
 // import ThreeCards from "../ThreeCards/ThreeCards";
 // import InnovativeSolutions from "../InnovativeSolutions/InnovativeSolutions";
@@ -25,10 +26,13 @@ function MainPage() {
     <div className="sm:h-screen bg-[#292828]" >
       <ContactUs/>
     </div>
-    {/* <div className="sm:h-screen bg-[#292828] pt-20" >
+    {/* <div className="sm:h-screen bg-[#292828]" >
+      <Footer/>
+    </div>
+    <div className="sm:h-screen bg-[#292828] pt-20" >
       <Real_Impact/>
-    </div> */}
-    {/* <div className="sm:h-screen bg-[#272727] " >
+    </div>
+    <div className="sm:h-screen bg-[#272727] " >
       <ThreeCards/>
     </div>
     <div className="sm:h-screen bg-[#272727] " >

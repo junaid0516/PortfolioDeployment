@@ -114,7 +114,7 @@ function ContactUs() {
             <h1 className="text-xl font-bold">Address</h1>
             </div>
             <p className="text-start">
-              Lahore , Rahim yar khan Punjab <br /> United State Of America  
+             Johar Town , Lahore <br /> Punjab Pakistan  
             </p>
           </div>
           <div className="flex flex-col py-6 ">
@@ -123,7 +123,7 @@ function ContactUs() {
             <h1 className="text-xl font-bold">Lets Talk</h1>
             </div>
             <p className="text-start text-green-400">
-             +92 333 4589620
+             +92 335 0294188
             </p>
           </div>
           <div className="flex flex-col ">
@@ -132,7 +132,7 @@ function ContactUs() {
             <h1 className="text-xl font-bold">Grneral Support</h1>
             </div>
             <p className="text-start text-green-400">
-             Junaid@gamil.com 
+             hr@nyxlogics.com 
             </p>
           </div>
         </motion.div>

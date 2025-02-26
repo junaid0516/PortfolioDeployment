@@ -94,7 +94,7 @@ function UpperSection() {
     </div>
 
       {/* Navbar */}
-      <div className="fixed top-5 left-0 w-full flex justify-center items-start  font-[roboto]">
+      <div className="fixed top-5 left-0 w-full flex justify-center items-start z-50 font-[roboto]">
         <div className="bg-[#54696369]  w-full max-w-6xl h-12 rounded-3xl shadow-lg flex items-center px-4 sm:px-6 lg:px-8">
           <div className="flex flex-row justify-center items-center ">
             <img src={mainlogo} height={25} width={30} className="mr-1"/>
