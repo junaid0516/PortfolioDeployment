@@ -129,7 +129,7 @@ function ContactUs() {
           <div className="flex flex-col ">
             <div className="flex items-center gap-2">
                 <img className=" w-4 h-4" src={msgicon} alt="" />
-            <h1 className="text-xl font-bold">Grneral Support</h1>
+            <h1 className="text-xl font-bold">General Support</h1>
             </div>
             <p className="text-start text-green-400">
              hr@nyxlogics.com 
